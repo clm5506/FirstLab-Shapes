@@ -33,25 +33,43 @@ public class Picture
         wall = new Square();
         wall.moveVertical(80);
         wall.changeSize(100);
+        
         wall.makeVisible();
-
+        wall.changeColor("magenta");
+        
         window = new Square();
-        window.changeColor("black");
-        window.moveHorizontal(20);
+        window.changeColor("blue");
+        window.moveHorizontal(15);
         window.moveVertical(100);
         window.makeVisible();
+        
+        //second window
+        
+        Square secondWindow = new Square();
+        secondWindow.changeColor("blue");
+        secondWindow.moveHorizontal(55);
+        secondWindow.moveVertical(100);
+        secondWindow.makeVisible();
+        //door
+        Square door = new Square();
+        door.changeColor("green");
+        door.moveHorizontal(20);
+        door.moveVertical(150);
+        door.makeVisible();
+        door.moveHorizontal(15);
 
         roof = new Triangle();
         roof.changeSize(50, 140);
         roof.moveHorizontal(60);
         roof.moveVertical(70);
         roof.makeVisible();
+        roof.changeColor("brown");
 
         sun = new Circle();
-        sun.changeColor("yellow");
+        sun.changeColor("red");
         sun.moveHorizontal(180);
         sun.moveVertical(-10);
-        sun.changeSize(60);
+        sun.changeSize(20);
         sun.makeVisible();
     }
 
